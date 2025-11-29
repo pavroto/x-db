@@ -3,8 +3,8 @@
 set -e 
 
 (
-  cmake -B build -S . -G Ninja 
+  cmake -B build -S . -G "Ninja Multi-Config"
   cmake --build ./build 
 )
 
-exec "./build/x-db"
+exec "./build/Debug/x-db"
